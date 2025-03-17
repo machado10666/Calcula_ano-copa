@@ -1,13 +1,13 @@
 /* Estilos gerais */
 body {
-    font-family: Arial-black, sans-serif;
+    font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh; /* Garante que o body ocupe toda a altura da tela */
+    min-height: 100vh;
 }
 
 .container {
@@ -17,26 +17,14 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     max-width: 400px;
-    width: 90%; /* A largura do container se ajusta a telas menores */
-    margin: 20px auto; /* Centraliza o container e mantém margem uniforme */
-}
-
-/* Estilo para o logotipo da FIFA */
-.fifa-logo {
-    width: 150px; /* Tamanho padrão */
-    margin-bottom: 20px;
+    width: 90%;
+    margin: 20px auto;
 }
 
 h1 {
     color: #d32f2f; /* Vermelho */
     font-size: 26px;
     margin-bottom: 12px;
-}
-
-p {
-    color: #0303F1;
-    font-size: 18px;
-    margin-bottom: 20px;
 }
 
 label {
@@ -56,7 +44,7 @@ input {
 }
 
 button {
-    background-color: #0000ff; /* azul*/
+    background-color: #0000ff; /* Azul */
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -67,81 +55,23 @@ button {
 }
 
 button:hover {
-    background-color: #ff0000; /* Vermelho mais escuro ao passar o mouse */
+    background-color: #ff0000; /* Vermelho ao passar o mouse */
+}
+
+button:disabled {
+    background-color: #ccc; /* Cinza quando desabilitado */
+    cursor: not-allowed;
+}
+
+.erro {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    display: none; /* Esconde a mensagem de erro inicialmente */
 }
 
 #resultado {
     margin-top: 20px;
-    text-align: center; /* Centraliza o texto do resultado */
     font-size: 16px;
     color: #333;
-}
-
-/* Media Queries para Responsividade */
-
-/* Telas menores que 600px (dispositivos móveis) */
-@media (max-width: 600px) {
-    .container {
-        padding: 15px; /* Reduz o padding para telas menores */
-    }
-
-    .fifa-logo {
-        width: 120px; /* Reduz o tamanho do logotipo */
-    }
-
-    h1 {
-        font-size: 22px; /* Reduz o tamanho do título */
-    }
-
-    p {
-        font-size: 13px; /* Reduz o tamanho do parágrafo */
-    }
-
-    input {
-        padding: 8px; /* Reduz o padding dos inputs */
-        font-size: 14px;
-    }
-
-    button {
-        padding: 8px 16px; /* Reduz o padding do botão */
-        font-size: 14px;
-    }
-
-    #resultado {
-        font-size: 14px; /* Reduz o tamanho da fonte do resultado */
-    }
-}
-
-/* Telas menores que 400px (dispositivos muito pequenos) */
-@media (max-width: 400px) {
-    .container {
-        width: 95%; /* Aumenta a largura em telas muito pequenas */
-        padding: 10px; /* Reduz o padding em telas muito pequenas */
-    }
-
-    .fifa-logo {
-        width: 80px; /* Reduz o tamanho do logotipo em telas muito pequenas */
-    }
-
-    h1 {
-        font-size: 20px; /* Título menor */
-    }
-
-    p {
-        font-size: 14px; /* Mantém um tamanho mínimo para legibilidade */
-    }
-
-    input {
-        padding: 6px; /* Inputs mais compactos */
-        font-size: 12px;
-    }
-
-    button {
-        padding: 6px 12px; /* Botão mais compacto */
-        font-size: 12px;
-    }
-
-    #resultado {
-        font-size: 12px; /* Resultado com fonte menor */
-    }
 }
