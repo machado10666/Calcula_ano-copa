@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anos de Copa do Mundo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Logotipo da FIFA -->
+        <img src="fifa-logo.png" alt="Logotipo da FIFA" class="fifa-logo">
+        
+        <h1>Descubra os Anos de Copa do Mundo</h1>
+        <p>Informe o ano inicial e o ano limite para ver os anos em que ocorreram Copas do Mundo.</p>
+        
+        <label for="anoInicial">Ano Inicial:</label>
+        <input type="number" id="anoInicial" placeholder="Ex: 2018">
+        
+        <label for="anoLimite">Ano Limite:</label>
+        <input type="number" id="anoLimite" placeholder="Ex: 2022">
+        
+        <button onclick="mostrarCopas()">Mostrar Copas</button>
+        
+        <div id="resultado"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
