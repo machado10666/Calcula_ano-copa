@@ -21,6 +21,12 @@ body {
     margin: 20px auto;
 }
 
+/* Estilo para o logo da FIFA */
+.fifa-logo {
+    width: 150px; /* Ajuste o tamanho conforme necessário */
+    margin-bottom: 20px;
+}
+
 h1 {
     color: #d32f2f; /* Vermelho */
     font-size: 26px;
