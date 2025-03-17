@@ -3,28 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anos de Copa do Mundo</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Calcular Anos de Copa do Mundo</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link para o CSS -->
 </head>
 <body>
     <div class="container">
-        <!-- Logotipo da FIFA -->
-        <img src="fifa-logo.png" alt="Logotipo da FIFA" class="fifa-logo">
-        
         <h1>Descubra os Anos de Copa do Mundo</h1>
         <p>Informe o ano inicial e o ano limite para ver os anos em que ocorreram Copas do Mundo.</p>
-        
-        <label for="anoInicial">Ano Inicial:</label>
-        <input type="number" id="anoInicial" placeholder="Ex: 2018">
-        
-        <label for="anoLimite">Ano Limite:</label>
-        <input type="number" id="anoLimite" placeholder="Ex: 2022">
-        
-        <button onclick="mostrarCopas()">Mostrar Copas</button>
-        
+        <form id="form-copa">
+            <label for="ano-inicial">Ano Inicial:</label>
+            <input
+                type="number"
+                id="ano-inicial"
+                name="ano-inicial"
+                placeholder="Ex: 1930"
+                min="1930"
+                required
+            >
+            <label for="ano-limite">Ano Limite:</label>
+            <input
+                type="number"
+                id="ano-limite"
+                name="ano-limite"
+                placeholder="Ex: 2022"
+                min="1930"
+                required
+            >
+            <p id="erro" class="erro"></p> <!-- Mensagem de erro -->
+            <button type="submit" id="botao">Mostrar Copas</button>
+        </form>
         <div id="resultado"></div>
     </div>
-
-    <script src="script.js"></script>
+    <script src="script.js"></script> <!-- Link para o JavaScript -->
 </body>
 </html>
